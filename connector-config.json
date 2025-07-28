@@ -1,0 +1,12 @@
+{
+  "name": "mongo-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mongodb.MongoDbConnector",
+    "mongodb.connection.string": "mongodb://mongo:27017/?replicaSet=rs0",
+    "mongodb.name": "dbserver1",
+    "mongodb.database.include.list": "inventory",
+    "collection.include.list": "inventory.products",
+    "topic.prefix": "dbserver1",
+    "tasks.max": "1"
+  }
+}
